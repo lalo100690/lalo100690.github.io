@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REPOCEN | Página principal</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/funciones.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<!-- WEBFONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/c4e96eb6bb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<nav>
+		<div class="container col10 last">
+			<h1>REPOCEN | <span>Universidad Autónoma de Querétaro</span></h1>
+			<div class="user col2 last">
+				<h2 id="user-name">Lisset Medel</h2>
+				<div class="dropdown"><i class="fas fa-sort-down"></i></div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container col10 last">
+
+		<header class="col10 last">
+			<h1>BUSCAR CONVENIOS</h1>
+		</header>
+
+		<div class="barra col10">
+			<input type="search" placeholder="Escribe un texto para buscar" class="col4">
+			<select class="col2">
+				<option disabled>Selecciona un criterio...</option>
+			</select>
+			<div class="barra-opciones col2">
+				<button class="active"><i class="fas fa-sort-alpha-down"></i></button>
+				<button><i class="fas fa-sort-alpha-down-alt"></i></button>
+				<button><i class="fas fa-sort-numeric-up"></i></button>
+				<button><i class="fas fa-sort-numeric-down-alt"></i></button>
+			</div>
+
+			<button class="col2 last">LIMPIAR FILTROS</button>
+		</div>
+
+		<content class="col10">
+			<div class="convenio col2">
+				<div class="icon privado"><i class="fas fa-city"></i></div>
+				<div class="icon dinero"><i class="fas fa-dollar-sign"></i></div>
+				<h1 class="convenio-titulo">TITULO DE CONVENIO Más LARGO DE LO NORMAL</h1>
+				<span class="tipo"><i class="fas fa-exchange-alt"></i><p>CSSYPP</p></span>
+				<span class="fecha"><i class="fas fa-calendar-check"></i><p>10/06/1990</p></span>
+				<span class="fecha"><i class="fas fa-calendar-times"></i><p>10/06/1990</p></span>
+				<button onclick="navegar('detalle')">VER CONVENIO</button>
+			</div>
+			<div class="convenio col2">
+				<div class="icon privado"><i class="fas fa-city"></i></div>
+				<div class="icon dinero"><i class="fas fa-dollar-sign"></i></div>
+				<h1 class="convenio-titulo">TITULO DE CONVENIO</h1>
+				<span class="tipo"><i class="fas fa-exchange-alt"></i><p>CSSYPP</p></span>
+				<span class="fecha"><i class="fas fa-calendar-check"></i><p>10/06/1990</p></span>
+				<span class="fecha"><i class="fas fa-calendar-times"></i><p>10/06/1990</p></span>
+				<button onclick="navegar('detalle')">VER CONVENIO</button>
+			</div>
+			<div class="convenio col2">
+				<div class="icon privado"><i class="fas fa-city"></i></div>
+				<div class="icon dinero"><i class="fas fa-dollar-sign"></i></div>
+				<h1 class="convenio-titulo">TITULO NORMAL</h1>
+				<span class="tipo"><i class="fas fa-exchange-alt"></i><p>CSSYPP</p></span>
+				<span class="fecha"><i class="fas fa-calendar-check"></i><p>10/06/1990</p></span>
+				<span class="fecha"><i class="fas fa-calendar-times"></i><p>10/06/1990</p></span>
+				<button onclick="navegar('detalle')">VER CONVENIO</button>
+			</div>
+
+		</content>
+
+
+	</div>
+
+	<button class="flotante-add" onclick="navegar('nuevo')">+</button>
+
+</body>
+</html>
